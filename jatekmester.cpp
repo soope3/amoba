@@ -224,7 +224,6 @@ void jatekmester::changePlayer()
     {
         player=1;
     }
-    cout<<"player: "<<player<<endl;
 }
 int jatekmester::playergetter()
 {
@@ -237,7 +236,6 @@ void jatekmester::boardSetter(int icord, int jcord)
     board[icord][jcord]=player;
     if(check(icord,jcord,player) || round==900)
     {
-        cout<<"meow"<<endl;
         endGame=false;
     }
     changePlayer();
